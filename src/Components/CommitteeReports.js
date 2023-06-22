@@ -16,10 +16,8 @@ const CommitteeReports = () => {
   };
 
   const handleSubmit = () => {
-    // Perform report generation logic here
     console.log('Start Date:', startDate);
     console.log('End Date:', endDate);
-    // You can process the selected dates and generate the report
   };
 
   return (
