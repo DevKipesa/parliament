@@ -1,16 +1,16 @@
 
 .module {
-    margin: 0;
+  margin-top:0%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #696870;
+    border-radius: 0px;
+    background-color: #e9e3e3;
     transition: background-color 0.3s ease;
     width: 250px;
   }
   
   .module:hover {
-    background-color: #dcdcdc; 
+    background-color: #635e5e; 
   }
   
   
@@ -41,10 +41,6 @@
   body {
     background-color: #F8F8F8; 
   }
-  .Dashboard {
-    position: relative;
-  }
-  
   .search-box {
     position: absolute;
     background-color: #696870;
@@ -52,6 +48,7 @@
     right: 10px;
     display: flex;
     align-items: center;
+    margin-top: 1%;
   }
   
   .search-box input[type="text"] {
@@ -70,6 +67,35 @@
   .search-button:hover {
     background-color: #e6e6e6;
   }  
+  .Dashboard {
+    /* Rest of your existing styles */
+  
+    /* Set background image */
+    background-image: url('../images/pal2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+
   
   
-  
+  .logo {
+    width: 270px; 
+    height: auto;
+    margin-top: 10%;
+     
+  }
+  .mission{
+    margin-left: 0%;
+    margin-top:6% ;
+    color: #111111;
+    font-weight: bold;
+    font-weight: 700;
+    background-color: #f0ecec;
+    margin-right:0;
+  }
+  .mission:hover{
+    background-color: #635e5e;
+  }
