@@ -1,0 +1,45 @@
+.Document {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Storage,
+  .Version,
+  .Tagging {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+  .Storage h3,
+  .Version h3,
+  .Tagging h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .Storage svg,
+  .Version svg,
+  .Tagging svg {
+    width: -20%;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .UploadAndStorage {
+    margin-top: auto;
+  }
+  .Document {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .Storage {
+    margin-top: auto;
+  }
+  .Storage :hover{
+    background-color: rgb(92, 94, 94);
+  }

@@ -11,6 +11,7 @@ import ActionItems from './Components/ActionItems';
 import LiveSession from './Components/LiveSession';
 import Voting from './Components/Voting';
 import HouseBusiness from './Components/HouseBusiness';
+import Upload from './Components/Upload';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Route path="/LiveSession" element={<LiveSession/>} />
         <Route path="/Voting" element={<Voting />} />
         <Route path="/HouseBusiness" element={<HouseBusiness />} />
-        
+        <Route path="/Upload" element={<Upload />} />
       </Routes>
     </Router>
     
