@@ -1,0 +1,95 @@
+/* CSS for ChatApp component */
+
+.chat-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 400px; /* Adjust the height as needed */
+  }
+  
+  .user-list {
+    flex: 1;
+  }
+  
+  .user-list h2 {
+    margin-top: 0;
+  }
+  
+  .user-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    cursor: pointer;
+  }
+  .user-list li:hover{
+    background-color: #09c979;
+    width: fit-content;
+  }
+  
+  .user-list li.selected {
+    font-weight: bold;
+  }
+  
+  .chat-box {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-right: 15%;
+  }
+  
+  .chat-box h2 {
+    margin-top: 0;
+  }
+  
+  .message-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  form {
+    display: flex;
+  }
+  
+  form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  form button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #2a0adf;
+  }
+  
+  .no-user-selected {
+    font-style: italic;
+    color: #999;
+  }
+  

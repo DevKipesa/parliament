@@ -14,6 +14,8 @@ import {
   faUpload,
   faCodeBranch,
   faTags,
+  faComments,
+  faCommentsDollar,
 } from '@fortawesome/free-solid-svg-icons';
 import './Homepage.css';
 import logo from '../images/logo.png';
@@ -44,6 +46,31 @@ const DocumentLibrary = () => {
             <Submodule to="/Upload" icon={faUpload} title="Upload and Storage" />
             <Submodule to="/VersionControl" icon={faCodeBranch} title="Version Control and Document Revision History" />
             <Submodule to="/DocumentCategorization" icon={faTags} title="Document Categorization and Tagging" />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const AnnouncementsSubmodule = () => {
+  const [showSubmodules, setShowSubmodules] = useState(false);
+
+  const handleToggleSubmodules = () => {
+    setShowSubmodules(!showSubmodules);
+  };
+
+  return (
+    <div className="module">
+      <div className="dropdown" onClick={handleToggleSubmodules}>
+        <h3>
+          <FontAwesomeIcon icon={faBullhorn} /> Announcements
+        </h3>
+        {showSubmodules && (
+          <div className="submodules">
+            <Submodule to="/Chat" icon={faComments} title="Chat and Messaging" />
+            <Submodule to="/DiscussionForums" icon={faCommentsDollar} title="Discussion Forums" />
+            <Submodule to="/Announcements" icon={faBullhorn} title="Announcement" /> {/* Updated icon */}
           </div>
         )}
       </div>
@@ -127,11 +154,7 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="module">
-            <Link className="Link" to="/Announcements">
-              <h3>
-                <FontAwesomeIcon icon={faBullhorn} /> Announcements
-              </h3>
-            </Link>
+            <AnnouncementsSubmodule />
           </div>
           <div className="module">
             <Link className="Link" to="/CommitteeReports">

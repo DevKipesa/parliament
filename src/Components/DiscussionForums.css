@@ -1,0 +1,109 @@
+/* DiscussionForums.css */
+
+.discussion-forum-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5%;
+  }
+  
+  .discussion-forum-page__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .discussion-forum-page__new-topic-form {
+    margin-bottom: 20px;
+  }
+  
+  .discussion-forum-page__new-topic-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .discussion-forum-page__new-topic-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .discussion-forum-page__topic {
+    margin-bottom: 40px;
+  }
+  
+  .discussion-forum-page__topic-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .discussion-forum-page__new-comment-form {
+    margin-bottom: 10px;
+  }
+  
+  .discussion-forum-page__new-comment-input {
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .discussion-forum-page__new-comment-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .discussion-forum-page__comment {
+    margin-bottom: 20px;
+  }
+  
+  .discussion-forum-page__comment-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .discussion-forum-page__edit-comment-form {
+    margin-bottom: 10px;
+  }
+  
+  .discussion-forum-page__edit-comment-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .discussion-forum-page__edit-comment-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .discussion-forum-page__delete-comment-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .discussion-forum-page__new-comment-button:hover{
+    background-color: rgb(6, 6, 150);
+  }
+  .discussion-forum-page__new-topic-button:hover{
+    background-color:  rgb(8, 8, 196);
+  }

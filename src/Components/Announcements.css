@@ -1,0 +1,66 @@
+/* announcement-page.css */
+
+.announcement-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  .announcement-page__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-page__form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .announcement-page__input {
+        flex-grow: 1;
+        padding: 15px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+  
+  .announcement-page__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .announcement-page__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .announcement-page__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .announcement-page__paragraph {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .announcement-page__delete-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .announcement-page__button:hover{
+    background-color: #08c411;
+  } 
