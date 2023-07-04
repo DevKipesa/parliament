@@ -1,0 +1,90 @@
+.voting-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 100px;
+  }
+  
+  .voting-container h2 {
+    text-align: center;
+  }
+  
+  .voting-container h3 {
+    margin-top: 20px;
+  }
+  
+  .voting-methods {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .voting-method {
+    margin-bottom: 10px;
+  }
+  
+  .voice-voting {
+    margin-bottom: 20px;
+  }
+  
+  .voice-input {
+    margin-bottom: 10px;
+  }
+  
+  .voice-recording {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .vote-button {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .vote-button:hover {
+    background-color: #007DA6;
+  }
+  
+  .vote-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .vote-status {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .tally-button {
+    text-align: center;
+  }
+  
+  .tally-button button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tally-button button:hover {
+    background-color: #007DA6;
+  }
+  
+  .tally-button button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
