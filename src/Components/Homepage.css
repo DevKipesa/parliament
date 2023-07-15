@@ -4,10 +4,11 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: -10px;
-    background-color: #e9e3e3;
+    background-color: hsl(0, 12%, 90%);
     transition: background-color 0.3s ease;
-    height: fit-content;
-    width: 400px;
+    height: max-content;
+    width: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .module:hover {
@@ -28,6 +29,7 @@
   
   .module svg {
     margin-right: 10px;
+
   }
   
   
@@ -35,12 +37,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100px;
+    height: 50px;
+    background-color:white;
   }
   
   
   body {
-    background-color: #F8F8F8; 
+    background-color:#000; 
   }
   .search-box {
     position: absolute;
@@ -49,7 +52,7 @@
     right: 10px;
     display: flex;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 0%;
   }
   
   .search-box input[type="text"] {
@@ -68,29 +71,18 @@
   .search-button:hover {
     background-color: #e6e6e6;
   }  
-  .Dashboard {
-    /* Rest of your existing styles */
-  
-    /* Set background image */
-    background-image: url('../images/pal2.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-  }
 
-  
   
   .logo {
     width: 270px; 
     height: auto;
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 20%;
      
   }
   .mission{
     margin-left: 0%;
-    margin-top:6% ;
+    margin-top:10% ;
     color: #111111;
     font-weight: bold;
     font-weight: 700;
