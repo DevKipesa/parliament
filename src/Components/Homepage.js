@@ -36,7 +36,8 @@ const DocumentLibrary = () => {
   };
 
   return (
-    <div className="module">
+    
+    <div className="module Doc1">
       <div className="dropdown" onClick={handleToggleSubmodules}>
         <h3>
           <FontAwesomeIcon icon={faFolderOpen} /> Document Library
@@ -61,7 +62,7 @@ const AnnouncementsSubmodule = () => {
   };
 
   return (
-    <div className="module">
+    <div className="module Doc1">
       <div className="dropdown" onClick={handleToggleSubmodules}>
         <h3>
           <FontAwesomeIcon icon={faBullhorn} /> Announcements
@@ -90,7 +91,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <div className="background-images">
+      <div className="back">
         <div className="Dashboard">
           <div className="logo-container">
             <img src={logo} alt="Logo" className="logo" />
