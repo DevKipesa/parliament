@@ -15,7 +15,7 @@
   }
   
   .module h3:hover {
-    color:#0eca27;
+    color: #f2f2f2;
   }
   
   
@@ -40,14 +40,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* height: 50px; */
-    background-color:rgb(223, 22, 22);
-    width: 280px;
-  }
-  
-  
-  body {
-    background-color:#000; 
+     height: 665px;
+    background-color:#3483eb;
+    width: 270px;
   }
   .search-box {
     position: absolute;
@@ -78,23 +73,17 @@
 
   
   .logo {
-    width: 270px; 
-    height: auto;
-    margin-top: 5%;
-    width: 20%;
+    height: 90px;
+    width: 270px;
      
   }
   .mission{
     margin-left: 0%;
-    margin-top:10% ;
     color: #111111;
     font-weight: bold;
     font-weight: 700;
-    background-color: #f0ecec;
+    background-color:#86c1f5;
     margin-right:0;
-  }
-  .mission:hover{
-    background-color: #635e5e;
   }
   .submodules :hover{
     margin-left: 0%;
@@ -106,3 +95,4 @@
   .Doc1{
     margin-left: -10px;
   }
+  

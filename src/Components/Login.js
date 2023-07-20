@@ -25,8 +25,9 @@ function LoginPage() {
   };
 
   return (
-    <div className="Page">
-      <div className="kenya-container">
+    <div>
+    <div className="page">
+    <div className="kenya-container">
             <img src={Kenya} alt="Kenya" className="kenya" />
           </div>
     <div className="Login">
@@ -62,9 +63,10 @@ function LoginPage() {
 
       <button onClick={handleLogin}>LOGIN</button>
       </div>
-    </div>
-    <div className='ver'>
+      <div className='ver'>
       <h1>      LIMS V 1.2.1</h1>
+    </div>
+    </div>
     </div>
     </div>
   );

@@ -92,10 +92,10 @@ const Homepage = () => {
   return (
     <div>
       <div className="back">
-        <div className="Dashboard">
-          <div className="logo-container">
+      <div className="logo-container">
             <img src={logo} alt="Logo" className="logo" />
           </div>
+        <div className="Dashboard">
 
           <div className="search-box">
             <input
@@ -165,14 +165,16 @@ const Homepage = () => {
             </Link>
           </div>
           <div className="mission">
-            <h3>
+          </div>
+        </div>
+        < div className="mission">
+        <h4>
               MISSION: TO REPRESENT THE INTERESTS OF THE KENYAN PEOPLE, ENACT LAWS, AND OVERSEE THE ACTIONS OF THE
               GOVERNMENT.
               <br /> VISION: TO BE AN EFFECTIVE AND INDEPENDENT LEGISLATURE THAT PROMOTES DEMOCRACY, UPHOLDS THE RULE OF
               LAW, AND SAFEGUARDS THE RIGHTS AND WELFARE OF THE PEOPLE OF KENYA.
-            </h3>
-          </div>
-        </div>
+            </h4>
+            </div>
       </div>
     </div>
   );
