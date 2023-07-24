@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faLock, faHammer } from '@fortawesome/free-solid-svg-icons';
-import { faEye, FaHammer, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faLock, faHammer, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Kenya from '../images/kenya.jpg';
+import { Link } from 'react-router-dom';
+import ForgotPasswordPopup from './forgotpassword';
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -13,6 +15,15 @@ function LoginPage() {
   const [errorMessage, setErrorMessage] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const[rememberMe, SetRememberMe]= useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   const handleRememberMeChange = () =>{
     SetRememberMe(!rememberMe)
@@ -26,6 +37,13 @@ function LoginPage() {
       // Login failed
       setErrorMessage('INVALID USERNAME OR PASSWORD.');
     }
+    // React.useEffect(()=>{
+    //   const rememberMeValue=localStorage.getItem('rememberMe');
+    //   if(rememberMeValue){
+    //     SetRememberMe(true);
+    //   }
+      
+    // })
   };
 
   return (
@@ -69,6 +87,10 @@ function LoginPage() {
   </label>
 </div>
 <h1 className='teh1'>Remember me</h1>
+< div className='forgot'>
+  < Link to= "/forgotpassword" onClick={handleOpenPopup}>Forgot Password</Link>
+</div>
+{showPopup && <ForgotPasswordPopup onClose={handleClosePopup} />}
        <div className='log'>
 
       <button onClick={handleLogin}>LOGIN</button>

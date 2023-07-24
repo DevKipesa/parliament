@@ -88,7 +88,19 @@ body{
 .remember{
   margin-left: -90%;
 }
+.remember :hover{
+  color: black;
+}
 .teh1{
   margin-left: -55%;
   margin-top: -7%;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.forgot{
+  margin-top: -6%;
+  margin-right: -60%;
+  color: #0d5cc2;
+}
+.forgot :hover{
+  color: rgb(26, 25, 25);
+}

@@ -9,6 +9,7 @@ import DocumentLibrary from './Components/DocumentLibrary';
 import ActionItems from './Components/ActionItems';
 import LiveSession from './Components/LiveSession';
 import Voting from './Components/Voting';
+import Forgot from './Components/forgotpassword'
 import HouseBusiness from './Components/HouseBusiness';
 import Upload from './Components/Upload';
 import DiscussionForums from './Components/DiscussionForums';
@@ -33,6 +34,7 @@ function App() {
         <Route path="/Upload" element={<Upload />} />
         <Route path="/DiscussionForums" element={<DiscussionForums/>} />
         <Route path="/Chat" element={<Chat />} />
+        <Route path="/forgotpassword" element={<Forgot />} />
       </Routes>
     </Router>
     
