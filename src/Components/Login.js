@@ -12,7 +12,11 @@ function LoginPage() {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const[rememberMe, SetRememberMe]= useState(false);
 
+  const handleRememberMeChange = () =>{
+    SetRememberMe(!rememberMe)
+  };
   const handleLogin = () => {
     // Perform login logic here
     if (username === 'Kipesa' && password === 'Kipesa1234') {
@@ -59,12 +63,18 @@ function LoginPage() {
     onClick={() => setShowPassword(!showPassword)}
   />
 </div>
+< div className='remember'>
+  <label>
+    <input type='checkbox' checked={rememberMe} onChange={handleRememberMeChange} />
+  </label>
+</div>
+<h1 className='teh1'>Remember me</h1>
        <div className='log'>
 
       <button onClick={handleLogin}>LOGIN</button>
       </div>
       <div className='ver'>
-      <h1>      LIMS V 1.2.1</h1>
+      <h1>      LIMS V 1.2.3</h1>
     </div>
     </div>
     </div>

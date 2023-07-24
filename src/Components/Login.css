@@ -80,8 +80,15 @@
   color: black;
 }
 .log{
-top: 100%;
+margin-top: 5%;
 }
 body{
   background-color: #f0f8ff;
 }
+.remember{
+  margin-left: -90%;
+}
+.teh1{
+  margin-left: -55%;
+  margin-top: -7%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
