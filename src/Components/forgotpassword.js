@@ -2,13 +2,23 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './forgotpassword.css';
+import { Link } from 'react-router-dom';
+
 
 const ForgotPassword = ({ onClose }) => {
   const [email, setEmail] = useState('');
-
+  const [isEmailValid, setIsEmailValid] = useState(true);
   const handleSend = () => {
-    console.log('Email:', email);
-    onClose();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isValid = emailRegex.test(email);
+  
+    setIsEmailValid(isValid);
+    if (isValid) {
+      console.log('Email:', email);
+      onClose();
+    } else {
+      console.log('Invalid email!');
+    }
   };
 
   return (
@@ -19,28 +29,32 @@ const ForgotPassword = ({ onClose }) => {
         </span>
         <div className="pass">
           <div className="word">
-            <h1> Forgotten your password? Enter your email to receive the reset link.</h1>
+            <h1> Enter your email and we will help you reset your password.</h1>
           </div>
           <div className="email">
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
               <input className='size'
+              className={isEmailValid ? 'size' : 'size invalid-email'}
               type="email"
               placeholder="Email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setIsEmailValid(true); 
+              }}
             />
+            {!isEmailValid && <span className="error-message"> <br/>A valid email is required.</span>}
           </div>
           <div className="button">
-            <button className="cancel-button" onClick={onClose}>
-              Cancel
-            </button>
             <button className="send-button" onClick={handleSend}>
-              Send
+              Send Password reset email
             </button>
           </div>
+          < div className='return'>
+      <Link to="/">Return to login</Link></div>
+    </div>
         </div>
       </div>
-    </div>
+      
   );
 };
 
