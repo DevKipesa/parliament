@@ -99,4 +99,15 @@
   .Doc1{
     margin-left: -10px;
   }
-  
+  .legg{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+  }
+  .icon{
+    margin-left: 35%;
+    margin-right: 25px;
+  }
+.back{
+  margin-top: -4%;
+}
