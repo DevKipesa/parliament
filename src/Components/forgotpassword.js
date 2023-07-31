@@ -31,7 +31,6 @@ const ForgotPassword = ({ onClose }) => {
           </div>
           <div className="email">
               <input className='size'
-              className={isEmailValid ? 'size' : 'size invalid-email'}
               type="email"
               placeholder="Email"
               value={email}
