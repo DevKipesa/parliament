@@ -2,7 +2,7 @@ import React, { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faLock, faGavel, faEnvelope, } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faLock, faGavel } from '@fortawesome/free-solid-svg-icons';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Kenya from '../images/kenya.jpg';
 import { Link } from 'react-router-dom';
