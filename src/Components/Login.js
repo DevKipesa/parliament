@@ -2,7 +2,7 @@ import React, { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faLock, faHammer, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faLock, faGavel, faEnvelope, } from '@fortawesome/free-solid-svg-icons';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Kenya from '../images/kenya.jpg';
 import { Link } from 'react-router-dom';
@@ -54,7 +54,7 @@ function LoginPage() {
           </div>
     <div className="Login">
       <div className='Legi'>
-      <FontAwesomeIcon icon={faHammer} className="input-icon" />
+      <FontAwesomeIcon icon={faGavel} className="input-icon" />
       <span>  LEGISLATIVE INFORMATION MANAGEMENT SYSTEM</span>
       </div>
       {errorMessage && <p className="error">{errorMessage}</p>}

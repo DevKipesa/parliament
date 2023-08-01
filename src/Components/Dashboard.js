@@ -16,7 +16,7 @@ import {
   faTags,
   faComments,
   faCommentsDollar,
-  faHammer,
+  faGavel,
 } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.css';
 import logo from '../images/logo.png';
@@ -94,7 +94,7 @@ const Homepage = () => {
     <div>
       <div className='legg'>
           <div className='icon'>
-      <FontAwesomeIcon icon={faHammer} className="input-icon" /></div>
+      <FontAwesomeIcon icon={faGavel} className="input-icon" /></div>
       <span className="text">  LEGISLATIVE INFORMATION MANAGEMENT SYSTEM</span>
       </div>
       <div className="back">
