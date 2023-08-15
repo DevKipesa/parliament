@@ -1,7 +1,7 @@
 .card1{
     width: 1066px;
     height: 170px;
-    background-color: aqua;
+    background-color: white;
     margin-left: 21%;
     margin-top: -54.5%;
 }
@@ -17,6 +17,17 @@
     margin-left: 20%;
     margin-top: 2%;
 }
-.latest{
-    margin-left:4%;
+.lat{
+
+    margin-left: 2%;
+    font: bold;
+}
+ .fasun{
+    color: blue;
+}
+.facalendar{
+    color: green;
+}
+.faclock{
+    color: purple;
 }

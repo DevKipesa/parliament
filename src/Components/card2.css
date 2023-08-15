@@ -1,15 +1,17 @@
 .card2{
     margin-left: 21%;
-    margin-top: 2%;
-    background-color: aqua;
-    width: 300px;
+    margin-top: 5%;
+    background-color: white;
+    width: 315px;
     height: 130px;
 }
 .fafile{
     margin-left: 10%;
     margin-top: 20%;
+    color: blue;
 }
 .pape{
     margin-left: 40%;
     margin-top: -10%;
+    
 }
