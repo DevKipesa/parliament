@@ -34,3 +34,15 @@
 .lat2{
     display: flex;
 }
+@media screen and (max-width: 768px) {
+    .card1 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    .joint,
+    .commitee,
+    .house,
+    .lat {
+        padding-right: 10px; /* Further reduce spacing for smaller screens */
+    }
+}
