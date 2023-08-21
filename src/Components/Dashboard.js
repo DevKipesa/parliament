@@ -79,7 +79,31 @@ const AnnouncementsSubmodule = () => {
     </div>
   );
 };
+const CommitteeSubmodule = () => {
+  const [showSubmodules, setShowSubmodules] = useState(false);
 
+  const handleToggleSubmodules = () => {
+    setShowSubmodules(!showSubmodules);
+  };
+
+  return (
+    <div className="module Doc1">
+      <div className="dropdown" onClick={handleToggleSubmodules}>
+        <h3>
+          <FontAwesomeIcon icon={faUsers} /> Committee
+        </h3>
+        {showSubmodules && (
+          <div className="submodules">
+            <Submodule to="/Committee" icon={faUsers} title="Committee" />
+            <Submodule to="/CommitteeReports" icon={faClipboardList} title="Committee Reports" />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+          
 const Homepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -114,7 +138,7 @@ const Homepage = () => {
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
-
+          <div className='modules'>
           <div className="module">
             <Link className="Link" to="/HouseBusiness">
               <h3>
@@ -164,11 +188,8 @@ const Homepage = () => {
             <AnnouncementsSubmodule />
           </div>
           <div className="module">
-            <Link className="Link" to="/CommitteeReports">
-              <h3>
-                <FontAwesomeIcon icon={faClipboardList} /> Committee Reports
-              </h3>
-            </Link>
+          <CommitteeSubmodule />
+          </div>
           </div>
           <div className="mission">
           </div>

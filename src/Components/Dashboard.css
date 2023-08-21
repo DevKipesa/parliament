@@ -11,9 +11,12 @@
     border: none;
     margin-left: 0%;
     background: transparent;
-
   }
-  
+  .modules{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .module h3:hover {
     color: #f2f2f2;
   }

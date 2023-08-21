@@ -36,13 +36,26 @@
 }
 @media screen and (max-width: 768px) {
     .card1 {
-        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px;
+        flex-direction: column; /* Stack contents vertically */
     }
-    
+
     .joint,
     .commitee,
     .house,
     .lat {
-        padding-right: 10px; /* Further reduce spacing for smaller screens */
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    .lat2 {
+        flex-direction: column; /* Stack items vertically */
     }
 }
+
+
+
+
