@@ -9,7 +9,7 @@ function card1() {
            < div  className='lat'>
             <h3>LATEST SESSION</h3>
             </div>
-
+          <div className='lat2'>
           < div className='house'>
             <h2>< FontAwesomeIcon icon={faSun} className='fasun' /> Morning Session</h2>
             <h2>< FontAwesomeIcon icon={faCalendar} className='fasun' /> Mon, March 20th 2023</h2>
@@ -24,6 +24,7 @@ function card1() {
             <h2>< FontAwesomeIcon icon={faUsers} className='faclock' /> Joint Health And Budget</h2>
             <h2>< FontAwesomeIcon icon={faCalendar} className='faclock' /> Thur, March 30th 2023</h2>
             <h2>< FontAwesomeIcon icon={faClock} className='faclock' /> 03/30/2023</h2>
+          </div>
           </div>
       </div>
     </div>
