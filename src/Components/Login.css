@@ -58,6 +58,8 @@
 .input-container {
   position: relative;
   margin: 4%;
+  display: flex;
+  align-items: center;
 }
 
 .eye {
@@ -103,4 +105,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 .forgot :hover{
   color: rgb(26, 25, 25);
+}
+.input-icon {
+  margin-right: 14px; 
 }

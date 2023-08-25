@@ -60,7 +60,7 @@ function LoginPage() {
       {errorMessage && <p className="error">{errorMessage}</p>}
       <div className="input-container">
   <FontAwesomeIcon icon={faUser} className="input-icon" />
-      <input
+      <input className='input'
         type="text"
         placeholder="Username"
         value={username}
@@ -69,7 +69,7 @@ function LoginPage() {
       </div>
       <div className="input-container">
       <FontAwesomeIcon icon={faLock} className="input-icon" />
-  <input
+  <input className='input'
     type={showPassword ? 'text' : 'password'}
     placeholder="Password"
     value={password}
