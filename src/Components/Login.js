@@ -93,7 +93,7 @@ function LoginPage() {
 {showPopup && <ForgotPasswordPopup onClose={handleClosePopup} />}
        <div className='log'>
 
-      <button onClick={handleLogin}>LOGIN</button>
+      <button onClick={handleLogin} className='logi'>LOGIN</button>
       </div>
       <div className='ver'>
       <h1>      LIMS V 1.2.3</h1>

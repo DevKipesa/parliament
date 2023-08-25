@@ -25,8 +25,8 @@
 .Login button {
   width: 90%;
   padding: 10px;
-  background: #acaeaf;
-  color: white;
+  background: #2d7be0;
+  color: black;
   border: none;
   border-radius: 0px;
   cursor: pointer;
@@ -34,7 +34,7 @@
 }
 
 .Login button:hover {
-  background: #3483eb;
+  background: #f0f8ff;
 }
 
 .Login .error {
@@ -109,3 +109,4 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .input-icon {
   margin-right: 14px; 
 }
+
