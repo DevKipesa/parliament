@@ -37,7 +37,7 @@ const DocumentLibrary = () => {
   };
 
   return (
-    
+    < div className='lib'>
     <div className="module Doc1">
       <div className="dropdown" onClick={handleToggleSubmodules}>
         <h3>
@@ -52,6 +52,7 @@ const DocumentLibrary = () => {
         )}
       </div>
     </div>
+    </div>
   );
 };
 
@@ -63,6 +64,7 @@ const AnnouncementsSubmodule = () => {
   };
 
   return (
+    < div className='ments'>
     <div className="module Doc1">
       <div className="dropdown" onClick={handleToggleSubmodules}>
         <h3>
@@ -77,6 +79,7 @@ const AnnouncementsSubmodule = () => {
         )}
       </div>
     </div>
+    </div>
   );
 };
 const CommitteeSubmodule = () => {
@@ -87,6 +90,7 @@ const CommitteeSubmodule = () => {
   };
 
   return (
+    < div className="com">
     <div className="module Doc1">
       <div className="dropdown" onClick={handleToggleSubmodules}>
         <h3>
@@ -99,6 +103,7 @@ const CommitteeSubmodule = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
@@ -170,12 +175,14 @@ const Homepage = () => {
           <div className="module">
             <DocumentLibrary />
           </div>
+          < div className='tory'>
           <div className="module">
             <Link className="Link" to="/Directory">
               <h3>
                 <FontAwesomeIcon icon={faUsers} /> Directory
               </h3>
             </Link>
+          </div>
           </div>
           <div className="module">
             <Link className="Link" to="/ReviewRoom">
