@@ -19,7 +19,7 @@ function LiveSession() {
    </div>
    < div className='button'>
    <a href="https://meet.google.com/" target="_blank" rel="noopener noreferrer">
-    <button onClick={handleAttendMeeting}>Attend Meeting</button>
+    <button  onClick={handleAttendMeeting}>Attend Meeting</button>
     </a>
    </div>
    </div>
