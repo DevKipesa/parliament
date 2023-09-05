@@ -14,8 +14,8 @@ function LiveSession() {
       < div className='live'>
       < div className='session'>
     <h2 className='details'>Session Details</h2>
-    <p>Date: {sessionDetails.date}</p>
-    <p>Time: {sessionDetails.time}</p>
+    <p>DATE: {sessionDetails.date}</p>
+    <p>TIME: {sessionDetails.time}</p>
    </div>
    < div className='button'>
    <a href="https://meet.google.com/" target="_blank" rel="noopener noreferrer">
