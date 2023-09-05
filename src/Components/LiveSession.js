@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './livesession.css';
 function LiveSession() {
   const sessionDetails = {
     date: 'September 10, 2023',
