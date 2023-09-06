@@ -5,7 +5,7 @@
 
 } */
 .details{
-    font: bolder;
+    font-weight: bold;
     font-size: larger;
 }
 .button{

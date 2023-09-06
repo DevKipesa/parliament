@@ -52,7 +52,7 @@ const ChatApp = () => {
   return (
     <div className="chat-app">
       <div className="user-list">
-        <h3>USERS</h3>
+        <h3 className='use'>USERS</h3>
         <ul>
           {users.map((user) => (
             <li
@@ -83,7 +83,7 @@ const ChatApp = () => {
                 onChange={(e) => setNewMessage(e.target.value)}
                 placeholder="Type a message..."
               />
-              <button type="submit">Send</button>
+              <button type="submit">SEND</button>
             </form>
           </>
         ) : (

@@ -9,6 +9,7 @@
   
   .user-list {
     flex: 1;
+    margin-left: 2%;
   }
   
   .user-list h2 {
@@ -24,8 +25,9 @@
     cursor: pointer;
   }
   .user-list li:hover{
-    background-color: #09c979;
-    width: fit-content;
+    background-color: #3483eb;
+    width: 20%;
+    padding: 1%;
   }
   
   .user-list li.selected {
@@ -77,19 +79,23 @@
   form button {
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #cccbd1;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
   form button:hover {
-    background-color: #2a0adf;
+    background-color: #3483eb;
   }
   
   .no-user-selected {
     font-style: italic;
     color: #999;
+  }
+  .use{
+    font-weight: bold;
+    text-decoration: underline;
   }
   
