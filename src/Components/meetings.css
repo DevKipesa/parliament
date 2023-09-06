@@ -14,8 +14,9 @@
     font-size: x-large;
     background-color: #3483eb;
     width: fit-content;
+    padding: 0.5%;
 }
 .session{
     margin-left: 2%;
-    margin-top:5%
+    margin-top:3%
 }
