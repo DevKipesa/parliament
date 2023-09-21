@@ -39,7 +39,7 @@ const ForgotPassword = ({ onClose }) => {
                 setIsEmailValid(true); 
               }}
             />
-            {!isEmailValid && <span className="error-message"> <br/>A valid email is required.</span>}
+            {!isEmailValid && <span className="error-message"> <br/>A valid email is required!</span>}
           </div>
           <div className="button">
             <button className="send-button" onClick={handleSend}>
